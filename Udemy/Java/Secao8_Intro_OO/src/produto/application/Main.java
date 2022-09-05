@@ -19,15 +19,24 @@ public class Main {
             produto.preco = sc.nextDouble();
             System.out.print("Quantidade: ");
             produto.quantidade = sc.nextInt();
+            System.out.println();
+            System.out.println("Dados do produto: " + produto);
 
-            System.out.println(produto);
+            System.out.println();
+            System.out.println("Entre com um numero para adicionar no estoque");
+            int qtd = sc.nextInt();
+            produto.adicionaProduto(qtd);
+            System.out.println("Dados Atualizados: " + produto);
+            System.out.println();
+            System.out.println("Entre com um numero para remover do estoque");
+            qtd = sc.nextInt();
+            produto.removeProduto(qtd);
+            System.out.println("Dados Atualizados: " + produto);
             System.out.println("Deseja alterar algum dado? S/N");
             opcao = sc.next();
             sc.nextLine();
             opcao = opcao.toLowerCase();
         } while (!opcao.equals("n"));
-
-
 
 
         sc.close();
