@@ -11,7 +11,7 @@ public class Main {
         x = new Triangulo();
         y = new Triangulo();
 
-        double areaX, areaY;
+
         System.out.println("Valores triangulo X: ");
         x.a = sc.nextDouble();
         x.b = sc.nextDouble();
@@ -20,10 +20,9 @@ public class Main {
         y.a = sc.nextDouble();
         y.b = sc.nextDouble();
         y.c = sc.nextDouble();
-        double p = (x.a + x.b + x.c) / 2;
-        areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
-        p = (y.a + y.b + y.c) / 2;
-        areaY = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+        double areaX, areaY;
+        areaX = x.area();
+        areaY = y.area();
         System.out.println("Area X: " + String.format("%.4f", areaX));
         System.out.println("Area Y: " + String.format("%.4f", areaY));
 
