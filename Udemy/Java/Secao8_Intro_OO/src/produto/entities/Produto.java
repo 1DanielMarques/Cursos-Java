@@ -17,5 +17,10 @@ public class Produto {
         this.quantidade -= quantidade;
     }
 
+    @Override
+    public String toString() {
+        return "[Nome] "+nome+" | [Preço] "+String.format("%.2f",preco)+" | [Quantidade] "+quantidade+" | [Total] "+String.format("%.2f",valorTotalEstoque());
+
+    }
 
 }

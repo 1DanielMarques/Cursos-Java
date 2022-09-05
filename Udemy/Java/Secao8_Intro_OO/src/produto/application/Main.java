@@ -19,7 +19,8 @@ public class Main {
             produto.preco = sc.nextDouble();
             System.out.print("Quantidade: ");
             produto.quantidade = sc.nextInt();
-            System.out.println(produto.nome + ", " + String.format("%.2f", produto.preco) + ", " + produto.quantidade);
+
+            System.out.println(produto);
             System.out.println("Deseja alterar algum dado? S/N");
             opcao = sc.next();
             sc.nextLine();
