@@ -14,12 +14,6 @@ public class Conta {
         this.nome = nome;
     }
 
-    public Conta(int numero, String nome, double saldo) {
-        this.numero = numero;
-        this.nome = nome;
-        this.saldo = saldo;
-    }
-
     public int getNumero() {
         return numero;
     }
@@ -46,7 +40,7 @@ public class Conta {
 
     @Override
     public String toString() {
-        return "[Titular] " + this.nome + " [Numero] " + this.numero + " [Saldo] " + this.saldo;
+        return "[Numero] - " + this.numero + " | [Titular] - " + this.nome + " | [Saldo] - R$" + String.format("%.2f", this.saldo);
     }
 
 }
