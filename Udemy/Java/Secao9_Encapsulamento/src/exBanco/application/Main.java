@@ -16,25 +16,24 @@ public class Main {
         sc.nextLine();
         String nome = sc.nextLine();
         Conta conta = new Conta(numero, nome);
-        System.out.print("Deseja fazer o depósito inicial? S/N ");
-        String opcao = sc.next();
-        opcao = opcao.toLowerCase();
-        if (opcao.equals("s")) {
+        System.out.print("Deseja fazer o depósito inicial? (s/n) ");
+        char opcao = sc.next().charAt(0);
+        if (opcao == 's') {
             System.out.print("[Valor] - R$");
             valor = sc.nextDouble();
             conta.deposita(valor);
         }
-        System.out.println(conta.toString());
+        System.out.println(conta);
         System.out.print("[Depósito] - ");
         valor = sc.nextDouble();
         conta.deposita(valor);
         System.out.println("[ATUALIZADO]");
-        System.out.println(conta.toString());
+        System.out.println(conta);
         System.out.print("[Saque] - ");
         valor = sc.nextDouble();
         conta.saca(valor);
         System.out.println("[ATUALIZADO]");
-        System.out.println(conta.toString());
+        System.out.println(conta);
 
 
         sc.close();
