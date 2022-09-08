@@ -18,9 +18,10 @@ public class Main {
         name = sc.nextLine();
         System.out.print("Price: ");
         price = sc.nextDouble();
-        System.out.print("Quantity in stock: ");
-        quantity = sc.nextInt();
-        Product product = new Product(name, price, quantity);
+      /*  System.out.print("Quantity in stock: ");
+        quantity = sc.nextInt();*/
+        Product p = new Product();
+        Product product = new Product(name, price);
         System.out.println();
         System.out.println("Product data: " + product);
         System.out.println();
