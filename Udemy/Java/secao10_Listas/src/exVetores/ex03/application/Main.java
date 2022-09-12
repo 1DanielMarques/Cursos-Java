@@ -26,15 +26,15 @@ public class Main {
             if (idade < 16) {
                 qtdIdade++;
             }
-            porcentagem = (double) qtdIdade / n * 100;
             System.out.print("Altura: ");
             altura = sc.nextDouble();
             mediaAltura += altura;
             vet[i] = new Pessoa(nome, idade, altura);
         }
-        mediaAltura =  mediaAltura/n;
-        System.out.println("Altura média: " +String.format("%.2f",mediaAltura));
-        System.out.println("Pessoas com menos de 16 anos: " + String.format("%.2f", porcentagem) + "%");
+        porcentagem = (double) qtdIdade / n * 100;
+        mediaAltura = mediaAltura / n;
+        System.out.println("Altura média: " + String.format("%.2f", mediaAltura));
+        System.out.println("Pessoas com menos de 16 anos: " + String.format("%.1f", porcentagem) + "%");
         for (int i = 0; i < vet.length; i++) {
             if (vet[i].getIdade() < 16) {
                 System.out.println(vet[i].getNome());
