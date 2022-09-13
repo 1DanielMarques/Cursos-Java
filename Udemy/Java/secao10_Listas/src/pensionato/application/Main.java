@@ -21,7 +21,7 @@ public class Main {
             sc.nextLine();
             nome = sc.nextLine();
             System.out.print("Email: ");
-            email = sc.nextLine();
+            email = sc.next();
             System.out.print("Quarto: ");
             quarto = sc.nextInt();
             quartos[quarto] = new Aluguel(nome, email, quarto);
