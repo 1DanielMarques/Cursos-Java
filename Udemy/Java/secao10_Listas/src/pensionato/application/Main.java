@@ -1,6 +1,6 @@
 package pensionato.application;
 
-import pensionato.entities.Estudante;
+import pensionato.entities.Aluguel;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
-        Estudante quartos[] = new Estudante[10];
+        Aluguel quartos[] = new Aluguel[10];
         String nome, email;
         int quarto;
 
@@ -24,14 +24,13 @@ public class Main {
             email = sc.nextLine();
             System.out.print("Quarto: ");
             quarto = sc.nextInt();
-            quartos[quarto] = new Estudante(nome, email, quarto);
+            quartos[quarto] = new Aluguel(nome, email, quarto);
             System.out.println();
         }
-        System.out.println();
         System.out.println("Quartos ocupados:");
         for (int i = 0; i < quartos.length; i++) {
             if (quartos[i] != null) {
-                System.out.println(quartos[i].toString());
+                System.out.println(quartos[i]);
             }
         }
 
