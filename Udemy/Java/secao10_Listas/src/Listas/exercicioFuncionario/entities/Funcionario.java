@@ -37,8 +37,4 @@ public class Funcionario {
     public void setSalario(double salario) {
         this.salario = salario;
     }
-    public void teste(){
-        System.out.println("Testando GIT");
-    }
-
 }
