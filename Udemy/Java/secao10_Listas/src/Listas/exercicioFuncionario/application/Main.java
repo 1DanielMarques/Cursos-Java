@@ -45,11 +45,8 @@ public class Main {
         for (Funcionario f : funcionariosList) {
             System.out.println(f.toString());
         }
-
-
         sc.close();
     }
-
     public static boolean idExistente(List<Funcionario> lista, int id) {
         Funcionario func = lista.stream().filter(idAux -> idAux.getId() == id).findFirst().orElse(null);
         return func != null;
