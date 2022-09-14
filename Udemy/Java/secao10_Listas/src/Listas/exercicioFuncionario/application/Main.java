@@ -18,7 +18,11 @@ public class Main {
             System.out.println();
             System.out.println("Funcionario #" + (i + 1) + ":");
             System.out.print("ID: ");
-            int id = sc.nextInt();
+            Integer id = sc.nextInt();
+            while (idExistente(funcionariosList, id)) {
+                System.out.print("ID Existente, tente novamente: ");
+                id = sc.nextInt();
+            }
             System.out.print("Nome: ");
             sc.nextLine();
             String nome = sc.nextLine();
@@ -44,7 +48,10 @@ public class Main {
 
 
         sc.close();
+    }
 
-
+    public static boolean idExistente(List<Funcionario> lista, int id) {
+        Funcionario func = lista.stream().filter(idAux -> idAux.getId() == id).findFirst().orElse(null);
+        return func != null;
     }
 }
