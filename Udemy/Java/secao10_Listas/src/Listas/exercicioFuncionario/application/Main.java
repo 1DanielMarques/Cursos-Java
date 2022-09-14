@@ -31,6 +31,8 @@ public class Main {
         System.out.print("Porcentagem: ");
         double porcentagem = sc.nextDouble();
 
+        System.out.println();
+        System.out.println("Lista de Funcionarios:");
         for(Funcionario func : funcionariosList){
             System.out.println(func.toString());
         }
