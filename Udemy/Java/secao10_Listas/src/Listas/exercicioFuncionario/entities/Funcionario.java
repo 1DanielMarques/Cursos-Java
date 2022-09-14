@@ -18,10 +18,6 @@ public class Funcionario {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getNome() {
         return nome;
     }
@@ -36,5 +32,14 @@ public class Funcionario {
 
     public void setSalario(double salario) {
         this.salario = salario;
+    }
+
+    @Override
+    public String toString() {
+        return id
+                + ", "
+                + nome
+                + ", R$"
+                + String.format("%.2f", salario);
     }
 }

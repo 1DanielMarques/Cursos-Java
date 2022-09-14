@@ -26,6 +26,14 @@ public class Main {
             double salario = sc.nextDouble();
             funcionariosList.add(new Funcionario(id,nome,salario));
         }
+        System.out.print("ID do funcionario que deseja aumentar salario: ");
+        int id = sc.nextInt();
+        System.out.print("Porcentagem: ");
+        double porcentagem = sc.nextDouble();
+
+        for(Funcionario func : funcionariosList){
+            System.out.println(func.toString());
+        }
 
 
         sc.close();
