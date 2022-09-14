@@ -24,17 +24,22 @@ public class Main {
             String nome = sc.nextLine();
             System.out.print("Salario: ");
             double salario = sc.nextDouble();
-            funcionariosList.add(new Funcionario(id,nome,salario));
+            funcionariosList.add(new Funcionario(id, nome, salario));
         }
         System.out.print("ID do funcionario que deseja aumentar salario: ");
         int id = sc.nextInt();
-        System.out.print("Porcentagem: ");
-        double porcentagem = sc.nextDouble();
-
+        Funcionario func = funcionariosList.stream().filter(f -> f.getId() == id).findFirst().orElse(null);
+        if (func == null) {
+            System.out.println("Funcionario inexistente");
+        } else {
+            System.out.print("Porcentagem: ");
+            double porcentagem = sc.nextDouble();
+            func.aumentaSalario(porcentagem);
+        }
         System.out.println();
         System.out.println("Lista de Funcionarios:");
-        for(Funcionario func : funcionariosList){
-            System.out.println(func.toString());
+        for (Funcionario f : funcionariosList) {
+            System.out.println(f.toString());
         }
 
 
