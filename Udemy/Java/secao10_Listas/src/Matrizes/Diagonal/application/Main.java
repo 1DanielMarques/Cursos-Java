@@ -1,4 +1,4 @@
-package Matrizes.application;
+package Matrizes.Diagonal.application;
 
 import java.util.Scanner;
 
@@ -39,5 +39,4 @@ public class Main {
 
         sc.close();
     }
-
 }
