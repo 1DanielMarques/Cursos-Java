@@ -3,6 +3,7 @@ package instanciandoData.application;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 
 public class Main {
@@ -19,9 +20,9 @@ public class Main {
         Instant d07 = Instant.parse("2022-07-20T01:30:26-03:00");
         LocalDate d08 = LocalDate.parse("20/07/2022", fmt1);
         // LocalDate d08 = LocalDate.parse("20/07/2022", DateTimeFormatter.ofPattern("dd/MM/yyyy"););
-        LocalDateTime d09 = LocalDateTime.parse("20/07/2022 01:30",fmt2);
-        LocalDate d10 = LocalDate.of(2022,7,20);
-        LocalDateTime d11 = LocalDateTime.of(2022,7,20, 1, 30);
+        LocalDateTime d09 = LocalDateTime.parse("20/07/2022 01:30", fmt2);
+        LocalDate d10 = LocalDate.of(2022, 7, 20);
+        LocalDateTime d11 = LocalDateTime.of(2022, 7, 20, 1, 30);
 
         System.out.println("d01 = " + d01);
         System.out.println("d02 = " + d02);
@@ -35,6 +36,29 @@ public class Main {
         System.out.println("d10 = " + d10);
         System.out.println("d11 = " + d11);
 
+        System.out.println("--------------------------");
+
+        LocalDate d12 = LocalDate.parse("2022-09-16");
+        LocalDateTime d13 = LocalDateTime.parse("2022-07-20T01:30:26");
+        Instant d14 = Instant.parse("2022-07-20T01:30:26Z");
+
+        DateTimeFormatter fmt3 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        DateTimeFormatter fmt4 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+        DateTimeFormatter fmt5 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault());
+        DateTimeFormatter fmt6 = DateTimeFormatter.ISO_DATE_TIME;
+        DateTimeFormatter fmt7 = DateTimeFormatter.ISO_INSTANT;
+
+        System.out.println("d12 = " + d12.format(fmt3));
+        System.out.println("d12 = " + fmt3.format(d12));
+        System.out.println("d12 = " + d12.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+
+        System.out.println("d13 = " + d13.format(fmt3));
+        System.out.println("d13 = " + d13.format(fmt4));
+        System.out.println("d13 = " + d13.format(fmt6));
+
+        System.out.println("d14 = " + fmt5.format(d14));
+        System.out.println("d14 = " + fmt7.format(d14));
+        System.out.println("d14 = " + d14);
 
     }
 }
