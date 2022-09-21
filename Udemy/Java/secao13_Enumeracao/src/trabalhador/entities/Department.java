@@ -1,4 +1,4 @@
-package trabalhador.entities.enums;
+package trabalhador.entities;
 
 public class Department {
     private String name;

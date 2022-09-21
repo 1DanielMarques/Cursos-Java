@@ -1,4 +1,4 @@
-package trabalhador.entities.enums;
+package trabalhador.entities;
 
 import java.util.Date;
 
