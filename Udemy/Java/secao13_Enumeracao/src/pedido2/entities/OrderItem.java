@@ -1,6 +1,4 @@
-package pedido2.entities.enums;
-
-import pedido2.entities.Product;
+package pedido2.entities;
 
 public class OrderItem {
     private Integer quantity;
@@ -40,4 +38,8 @@ public class OrderItem {
     public void setProduct(Product product) {
         this.product = product;
     }
+    public Double subTotal(){
+        return quantity * price;
+    }
+
 }
