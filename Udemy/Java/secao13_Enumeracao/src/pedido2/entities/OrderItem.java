@@ -44,7 +44,7 @@ public class OrderItem {
     }
 
     public String toString() {
-        StringBuilder sb = new StringBuilder();
+      StringBuilder sb = new StringBuilder();
         sb.append(product.getName() + ", ");
         sb.append("$" + String.format("%.2f", product.getPrice()) + ", ");
         sb.append("Quantity: " + quantity + ", ");

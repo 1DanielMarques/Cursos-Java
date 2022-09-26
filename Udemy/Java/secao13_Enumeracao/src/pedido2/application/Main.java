@@ -2,10 +2,13 @@ package pedido2.application;
 
 import pedido2.entities.Client;
 import pedido2.entities.Order;
+import pedido2.entities.OrderItem;
+import pedido2.entities.Product;
 import pedido2.entities.enums.OrderStatus;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
@@ -49,16 +52,18 @@ public class Main {
             sc.nextLine();
             String productName = sc.nextLine();
             System.out.print("Product price: ");
-            double productPrice = sc.nextDouble();
+            Double productPrice = sc.nextDouble();
+            Product product = new Product(productName,productPrice);
             System.out.print("Quantity: ");
-            int quantity = sc.nextInt();
-
+            Integer quantity = sc.nextInt();
+            OrderItem orderItem = new OrderItem(quantity, productPrice, product);
+            order.addOrderItems(orderItem);
         }
+        order.setMoment(new Date());
         Client client = new Client(name, email, sdf.parse(birthDate));
-
-        System.out.println("ORDER SUMARY: ");
-
-
+        order.setClient(client);
+        System.out.println("\nORDER SUMARY: ");
         sc.close();
+        System.out.println(order);
     }
 }

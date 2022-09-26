@@ -49,11 +49,11 @@ public class Order {
         this.client = client;
     }
 
-    public void addIOrderItems(OrderItem orderItem) {
+    public void addOrderItems(OrderItem orderItem) {
         orderItems.add(orderItem);
     }
 
-    public void removeIOrderItems(OrderItem orderItem) {
+    public void removeOrderItems(OrderItem orderItem) {
         orderItems.remove(orderItem);
     }
 
@@ -71,9 +71,9 @@ public class Order {
         sb.append("Client: " + client.getName());
         sb.append(" (" + client.getBirthDate() + ") - ");
         sb.append(client.getEmail());
-        sb.append("Order Items: \n");
-        for (OrderItem oI : orderItems) {
-            oI.toString();
+        sb.append("\nOrder Items: \n");
+        for (OrderItem o : orderItems) {
+            sb.append(o + "\n");
         }
         return sb.toString();
     }
