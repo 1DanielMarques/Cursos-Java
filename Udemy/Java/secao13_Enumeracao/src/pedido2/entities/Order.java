@@ -2,11 +2,13 @@ package pedido2.entities;
 
 import pedido.entities.enums.OrderStatus;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class Order {
+    private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
     private Date moment;
     private OrderStatus status;
     private Client client;
@@ -61,4 +63,19 @@ public class Order {
         }
         return total;
     }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Order moment: " + sdf.format(moment) + "\n");
+        sb.append("Order Status: " + status + "\n");
+        sb.append("Client: " + client.getName());
+        sb.append(" (" + client.getBirthDate() + ") - ");
+        sb.append(client.getEmail());
+        sb.append("Order Items: \n");
+        for (OrderItem oI : orderItems) {
+            oI.toString();
+        }
+        return sb.toString();
+    }
+
 }

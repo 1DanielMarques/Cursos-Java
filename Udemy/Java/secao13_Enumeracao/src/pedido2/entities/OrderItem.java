@@ -5,7 +5,7 @@ public class OrderItem {
     private Double price;
     private Product product;
 
-    public OrderItem(){
+    public OrderItem() {
 
     }
 
@@ -38,8 +38,17 @@ public class OrderItem {
     public void setProduct(Product product) {
         this.product = product;
     }
-    public Double subTotal(){
+
+    public Double subTotal() {
         return quantity * price;
     }
 
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(product.getName() + ", ");
+        sb.append("$" + String.format("%.2f", product.getPrice()) + ", ");
+        sb.append("Quantity: " + quantity + ", ");
+        sb.append("Subtotal: $" + String.format("%.2f", subTotal()));
+        return sb.toString();
+    }
 }
