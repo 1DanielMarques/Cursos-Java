@@ -1,6 +1,6 @@
 package pedido2.entities;
 
-import pedido.entities.enums.OrderStatus;
+import pedido2.entities.enums.OrderStatus;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
