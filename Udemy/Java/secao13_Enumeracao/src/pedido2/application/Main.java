@@ -53,7 +53,7 @@ public class Main {
             String productName = sc.nextLine();
             System.out.print("Product price: ");
             Double productPrice = sc.nextDouble();
-            Product product = new Product(productName,productPrice);
+            Product product = new Product(productName, productPrice);
             System.out.print("Quantity: ");
             Integer quantity = sc.nextInt();
             OrderItem orderItem = new OrderItem(quantity, productPrice, product);
@@ -63,7 +63,11 @@ public class Main {
         Client client = new Client(name, email, sdf.parse(birthDate));
         order.setClient(client);
         System.out.println("\nORDER SUMARY: ");
+        System.out.print(order);
+        System.out.println("Total price: $" + String.format("%.2f", order.total()));
+
+
         sc.close();
-        System.out.println(order);
+
     }
 }

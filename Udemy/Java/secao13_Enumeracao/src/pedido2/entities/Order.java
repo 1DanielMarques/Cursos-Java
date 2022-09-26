@@ -9,6 +9,7 @@ import java.util.List;
 
 public class Order {
     private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+    private static SimpleDateFormat sdf2 = new SimpleDateFormat("dd/MM/yyyy");
     private Date moment;
     private OrderStatus status;
     private Client client;
@@ -69,7 +70,7 @@ public class Order {
         sb.append("Order moment: " + sdf.format(moment) + "\n");
         sb.append("Order Status: " + status + "\n");
         sb.append("Client: " + client.getName());
-        sb.append(" (" + client.getBirthDate() + ") - ");
+        sb.append(" (" + sdf2.format(client.getBirthDate()) + ") - ");
         sb.append(client.getEmail());
         sb.append("\nOrder Items: \n");
         for (OrderItem o : orderItems) {
