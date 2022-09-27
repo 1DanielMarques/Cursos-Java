@@ -19,7 +19,13 @@ public class SavingsAccount extends Account {
     public void setInterestRate(Double interestRate) {
         this.interestRate = interestRate;
     }
-    public void updateBalance(){
+
+    public void updateBalance() {
         balance += balance * interestRate;
+    }
+
+    @Override
+    public void withdraw(double amount) {
+        balance -= amount;
     }
 }
