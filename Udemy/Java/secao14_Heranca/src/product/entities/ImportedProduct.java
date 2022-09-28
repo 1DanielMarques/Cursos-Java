@@ -18,11 +18,13 @@ public class ImportedProduct extends Product {
 
     @Override
     public String priceTag() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(name);
-        sb.append(" $ ");
-        sb.append(String.format("%.2f", totalPrice()));
-        return sb.toString();
+        return name
+                + " $ "
+                + String.format("%.2f", totalPrice())
+                + " (Customs fee: $ "
+                + String.format("%.2f", customsFee)
+                + ")";
+
     }
 
 

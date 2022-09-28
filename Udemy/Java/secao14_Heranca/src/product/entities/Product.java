@@ -30,10 +30,8 @@ public class Product {
     }
 
     public String priceTag() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(name);
-        sb.append(" $ ");
-        sb.append(String.format("%.2f", price));
-        return sb.toString();
+        return name
+                + " $ "
+                + String.format("%.2f", price);
     }
 }
