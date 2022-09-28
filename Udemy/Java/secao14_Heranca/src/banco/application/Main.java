@@ -7,13 +7,13 @@ import banco.entities.SavingsAccount;
 public class Main {
     public static void main(String[] args) {
 
-        Account acc = new Account(1001,"Alex",1000.0);
-        BusinessAccount bcc = new BusinessAccount(1002,"Maria",0.0,500.0);
+        Account acc = new Account(1001, "Alex", 1000.0);
+        BusinessAccount bcc = new BusinessAccount(1002, "Maria", 0.0, 500.0);
 
         //UPCASTING
         Account acc1 = bcc;
-        Account acc2 = new BusinessAccount(1003,"Bob",1000.0,500.0);
-        Account acc3 = new SavingsAccount(1004,"Anna",1000.0,0.01);
+        Account acc2 = new BusinessAccount(1003, "Bob", 1000.0, 500.0);
+        Account acc3 = new SavingsAccount(1004, "Anna", 1000.0, 0.01);
 
         //DOWNCASTING
         //BusinessAccount acc4 = acc2; Da erro
@@ -42,8 +42,14 @@ public class Main {
 
         acc2.withdraw(200.0);
         System.out.println(acc2.getBalance());
+        //------------------------------------------//
+        Account x = new Account(1020, "Alex", 1000.0);
+        Account y = new SavingsAccount(1023, "Maria", 1000.0, 0.01);
 
-
+        x.withdraw(50.0);
+        y.withdraw(50.0);
+        System.out.println(x.getBalance());
+        System.out.println(y.getBalance());
 
 
     }
