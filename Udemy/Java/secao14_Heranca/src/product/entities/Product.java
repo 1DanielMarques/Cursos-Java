@@ -1,8 +1,8 @@
 package product.entities;
 
 public class Product {
-    protected String name;
-    protected Double price;
+    private String name;
+    private Double price;
 
     public Product() {
 
