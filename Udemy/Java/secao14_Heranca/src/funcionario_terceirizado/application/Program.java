@@ -32,12 +32,13 @@ public class Program {
             } else {
                 // Employee emp = new Employee(name, hours, valuePerHour;
                 list.add(new Employee(name, hours, valuePerHour));
-
             }
-
-
         }
-
+        System.out.println();
+        System.out.println("PAYMENTS: ");
+        for(Employee e : list){
+            System.out.println(e);
+        }
 
         sc.close();
 
