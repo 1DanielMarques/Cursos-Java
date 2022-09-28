@@ -31,6 +31,7 @@ public class UsedProduct extends Product {
                 + " (used) $ "
                 + String.format("%.2f", getPrice())
                 + " (Manufacture date: "
-                + sdf.format(manufactureDate);
+                + sdf.format(manufactureDate)
+                +")";
     }
 }
