@@ -21,7 +21,7 @@ public class PessoaJuridica extends Pessoa {
     }
 
     @Override
-    public double imposto(double porcentagem) {
-        return getRendaAnual() * porcentagem / 100;
+    public double imposto() {
+        return getRendaAnual() / 100;
     }
 }
