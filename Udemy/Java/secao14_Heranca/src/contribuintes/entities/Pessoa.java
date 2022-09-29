@@ -28,4 +28,5 @@ public abstract class Pessoa {
     public void setRendaAnual(Double rendaAnual) {
         this.rendaAnual = rendaAnual;
     }
+    public abstract double imposto(double porcentagem);
 }

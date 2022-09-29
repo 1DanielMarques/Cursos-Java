@@ -19,4 +19,9 @@ public class PessoaJuridica extends Pessoa {
     public void setFuncionarios(int funcionarios) {
         this.funcionarios = funcionarios;
     }
+
+    @Override
+    public double imposto(double porcentagem) {
+        return 0;
+    }
 }
