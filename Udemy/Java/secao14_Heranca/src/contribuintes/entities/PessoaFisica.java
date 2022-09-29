@@ -1,13 +1,13 @@
 package contribuintes.entities;
 
-public class PessoaJuridica extends Pessoa {
+public class PessoaFisica extends Pessoa {
     private Double gastosSaude;
 
-    public PessoaJuridica() {
+    public PessoaFisica() {
         super();
     }
 
-    public PessoaJuridica(String nome, Double rendaAnual, Double gastosSaude) {
+    public PessoaFisica(String nome, Double rendaAnual, Double gastosSaude) {
         super(nome, rendaAnual);
         this.gastosSaude = gastosSaude;
     }
