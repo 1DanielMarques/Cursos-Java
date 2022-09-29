@@ -31,11 +31,12 @@ public class Main {
                 double radius = sc.nextDouble();
                 list.add(new Circle(color, radius));
             }
-
         }
-
+        System.out.println();
+        System.out.println("SHAPE AREAS:");
+        for (Shape sh : list) {
+            System.out.println(String.format("%.2f", sh.area()));
+        }
         sc.close();
-
-
     }
 }
