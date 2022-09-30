@@ -35,6 +35,8 @@ public class Main {
             System.out.println("Invalid dat format");
         } catch (DomainException e) {
             System.out.println("Error in reservation: " + e.getMessage());
+        }catch(RuntimeException e){
+            System.out.println("Unexpected error");
         }
         sc.close();
     }
