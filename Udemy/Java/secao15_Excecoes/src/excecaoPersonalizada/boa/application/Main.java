@@ -1,6 +1,7 @@
 package excecaoPersonalizada.boa.application;
 
 import excecaoPersonalizada.boa.model.entities.Reservation;
+import excecaoPersonalizada.boa.model.exceptions.DomainException;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -32,9 +33,9 @@ public class Main {
             System.out.println("Reservation: " + reservation);
         } catch (ParseException e) {
             System.out.println("Invalid dat format");
+        } catch (DomainException e) {
+            System.out.println("Error in reservation: " + e.getMessage());
         }
-
-
         sc.close();
     }
 }
