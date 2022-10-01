@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         System.out.println("Enter account data");
         System.out.print("Number: ");
         int number = sc.nextInt();
@@ -25,10 +26,9 @@ public class Main {
             double amount = sc.nextDouble();
             account.withdraw(amount);
             System.out.println("New balance: R$" + String.format("%.2f", account.getBalance()));
-        }catch (IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             System.out.println("Error: " + e.getMessage());
-        }
-        catch (InvalidValueException e) {
+        } catch (InvalidValueException e) {
             System.out.println("Withdraw error: " + e.getMessage());
         }
 
