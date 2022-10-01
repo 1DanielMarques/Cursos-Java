@@ -1,4 +1,4 @@
-package contaBancaria.entities;
+package contaBancaria.model.entities;
 
 public class Account {
     private Integer number;
@@ -50,6 +50,10 @@ public class Account {
     }
 
     public void withdraw(double amount) {
+        if(amount > balance){
+            throw new IllegalArgumentException();
+        }
+
         balance -= amount;
     }
 
