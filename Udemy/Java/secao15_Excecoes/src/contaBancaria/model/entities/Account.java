@@ -1,5 +1,7 @@
 package contaBancaria.model.entities;
 
+import contaBancaria.model.exceptions.InvalidValueException;
+
 public class Account {
     private Integer number;
     private String holder;
@@ -50,10 +52,12 @@ public class Account {
     }
 
     public void withdraw(double amount) {
-        if(amount > balance){
-            throw new IllegalArgumentException();
+        if (amount > balance) {
+            throw new InvalidValueException("Not enough balance");
         }
-
+        if (amount > withdrawLimit) {
+            throw new InvalidValueException("The amount exceeds withdraw limit");
+        }
         balance -= amount;
     }
 
