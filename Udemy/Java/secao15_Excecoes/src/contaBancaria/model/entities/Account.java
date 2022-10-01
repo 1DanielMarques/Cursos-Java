@@ -52,6 +52,9 @@ public class Account {
     }
 
     public void withdraw(double amount) {
+        if(amount < 0){
+            throw new InvalidValueException("The amount must be a positive value");
+        }
         if (amount > balance) {
             throw new InvalidValueException("Not enough balance");
         }
