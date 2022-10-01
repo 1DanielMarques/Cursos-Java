@@ -13,6 +13,10 @@ public class Account {
     }
 
     public Account(Integer number, String holder, Double balance, Double withdrawLimit) {
+        if(balance < 0 || withdrawLimit < 0){
+            throw new IllegalArgumentException("Enter positive values");
+        }
+
         this.number = number;
         this.holder = holder;
         this.balance = balance;
@@ -52,15 +56,16 @@ public class Account {
     }
 
     public void withdraw(double amount) {
-        if(amount < 0){
+        if (amount < 0) {
             throw new InvalidValueException("The amount must be a positive value");
-        }
-        if (amount > balance) {
-            throw new InvalidValueException("Not enough balance");
         }
         if (amount > withdrawLimit) {
             throw new InvalidValueException("The amount exceeds withdraw limit");
         }
+        if (amount > balance) {
+            throw new InvalidValueException("Not enough balance");
+        }
+
         balance -= amount;
     }
 

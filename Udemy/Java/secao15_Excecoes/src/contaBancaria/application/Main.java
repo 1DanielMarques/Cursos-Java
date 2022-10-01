@@ -18,14 +18,18 @@ public class Main {
         double initBalance = sc.nextDouble();
         System.out.print("Withdraw limit: R$");
         double limit = sc.nextDouble();
-        Account account = new Account(number, holder, initBalance, limit);
-
-        System.out.print("Enter amount for withdraw: R$");
-        double amount = sc.nextDouble();
         try {
-            account.withdraw(amount);
-        }catch (InvalidValueException e){
+            Account account = new Account(number, holder, initBalance, limit);
 
+            System.out.print("\nEnter amount for withdraw: R$");
+            double amount = sc.nextDouble();
+            account.withdraw(amount);
+            System.out.println("New balance: R$" + String.format("%.2f", account.getBalance()));
+        }catch (IllegalArgumentException e){
+            System.out.println("Error: " + e.getMessage());
+        }
+        catch (InvalidValueException e) {
+            System.out.println("Withdraw error: " + e.getMessage());
         }
 
         sc.close();
