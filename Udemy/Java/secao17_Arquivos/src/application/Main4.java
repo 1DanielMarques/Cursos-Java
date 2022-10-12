@@ -10,7 +10,7 @@ public class Main4 {
 
         String[] lines = new String[]{"Goord morning", "Good afternoon", "Good night"};
 
-        String path = "C:\\Users\\nohax\\OneDrive\\Área de Trabalho\\Software\\REPOSITORIOS\\CursosJava\\Udemy\\Java\\secao17_Arquivos\\out.txt";
+        String path = "C:\\Users\\nohax\\OneDrive\\Área de Trabalho\\Software\\REPOSITORIOS\\CursosJava\\Udemy\\Java\\secao17_Arquivos\\exercicioProp\\out\\summary.txt";
 
         try(BufferedWriter bw = new BufferedWriter(new FileWriter(path,true))){
             //FileWriter(path) -> cria/recria o arquivo

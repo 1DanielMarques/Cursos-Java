@@ -11,9 +11,9 @@ public class Main {
     public static void main(String[] args) {
         String[] dados;
         List<Produto> produtos = new ArrayList<>();
-        String pathIn = "C:\\Users\\nohax\\OneDrive\\Área de Trabalho\\Software\\REPOSITORIOS\\CursosJava\\Udemy\\Java\\secao17_Arquivos\\exercicioProp\\in.txt";
-        String pathOut = "C:\\Users\\nohax\\OneDrive\\Área de Trabalho\\Software\\REPOSITORIOS\\CursosJava\\Udemy\\Java\\secao17_Arquivos\\exercicioProp\\out.txt";
-        try (BufferedReader br = new BufferedReader(new FileReader(pathIn))) {
+        String path = "C:\\Users\\nohax\\OneDrive\\Área de Trabalho\\Software\\REPOSITORIOS\\CursosJava\\Udemy\\Java\\secao17_Arquivos\\exercicioProp\\";
+
+        try (BufferedReader br = new BufferedReader(new FileReader(path + "in.txt")); BufferedWriter bw = new BufferedWriter(new FileWriter(path + "out\\summary.txt"))) {
             String line = br.readLine();
             while (line != null) {
                 dados = line.split(",");
@@ -22,25 +22,11 @@ public class Main {
                 line = br.readLine();
             }
             for (Produto p : produtos) {
-                System.out.println(p);
-            }
-            //File file = new File(pathOut);
-            ;
-            //if (file.exists()) {
-            BufferedWriter bw = new BufferedWriter(new FileWriter(pathOut, true));
-            System.out.println("existe");
-        /*    } else {
-                bw = new BufferedWriter(new FileWriter(pathOut));
-                System.out.println("NAO existe");
-            }*/
-            for (Produto p : produtos) {
-                bw.write(p.getNome() + "," + p.total());
+                bw.write(p.toString());
                 bw.newLine();
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 }
