@@ -30,4 +30,9 @@ public class Produto {
     public double total() {
         return quantidade * preco;
     }
+
+    @Override
+    public String toString() {
+        return nome + "," + total();
+    }
 }

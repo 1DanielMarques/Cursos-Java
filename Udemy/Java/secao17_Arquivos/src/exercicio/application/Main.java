@@ -24,7 +24,7 @@ public class Main {
                 line = br.readLine();
             }
             for (Produto p : produtos) {
-                System.out.println(p.getNome() + " | " + p.getPreco() + " | " + p.getQuantidade() + " | " + p.total());
+                System.out.println(p);
             }
         } catch (IOException e) {
             e.printStackTrace();
