@@ -9,6 +9,7 @@ public class Main {
     public static void main(String[] args) {
 
         File file = new File("C:\\Users\\nohax\\OneDrive\\Área de Trabalho\\Software\\REPOSITORIOS\\CursosJava\\Udemy\\Java\\secao17_Arquivos\\exercicioProp\\in.txt");
+
         Scanner sc = null;
         try {
             sc = new Scanner(file);
