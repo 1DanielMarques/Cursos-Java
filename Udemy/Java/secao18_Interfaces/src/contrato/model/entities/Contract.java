@@ -2,7 +2,6 @@ package contrato.model.entities;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class Contract {
@@ -35,13 +34,12 @@ public class Contract {
         this.date = date;
     }
 
+    public Double getTotalValue() {
+        return totalValue;
+    }
+
     public List<Installment> getInstallmentList() {
         return installmentList;
     }
-
-    public void addList(Installment installment) {
-        installmentList.add(installment);
-    }
-
 
 }

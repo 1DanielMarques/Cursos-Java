@@ -1,11 +1,11 @@
 package contrato.application;
 
 import contrato.model.entities.Contract;
+import contrato.model.entities.Installment;
 import contrato.model.services.ContractService;
 import contrato.model.services.PaypalService;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Scanner;
@@ -20,7 +20,7 @@ public class Main {
         System.out.print("Numero: ");
         int number = sc.nextInt();
         System.out.print("Data (dd/MM/yyyy): ");
-        LocalDate date = LocalDate.parse(sc.nextLine(), fmt);
+        LocalDate date = LocalDate.parse(sc.next(), fmt);
         System.out.print("Valor do contrato: R$");
         double totalValue = sc.nextDouble();
         Contract contract = new Contract(number, date, totalValue);
@@ -28,10 +28,10 @@ public class Main {
         int installment = sc.nextInt();
         ContractService cs = new ContractService(new PaypalService());
         cs.processContract(contract,installment);
-
-
         System.out.println("Parcelas: ");
-
+        for(Installment i : contract.getInstallmentList()){
+            System.out.println(i);
+        }
 
 
         sc.close();
