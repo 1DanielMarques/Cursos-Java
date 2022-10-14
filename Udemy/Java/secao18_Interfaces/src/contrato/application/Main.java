@@ -1,5 +1,8 @@
 package contrato.application;
 
+import contrato.model.entities.Contract;
+
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
@@ -15,12 +18,17 @@ public class Main {
         System.out.print("Numero: ");
         int number = sc.nextInt();
         System.out.print("Data (dd/MM/yyyy): ");
-        LocalDateTime date = LocalDateTime.parse(sc.nextLine(), fmt);
+        LocalDate date = LocalDate.parse(sc.nextLine(), fmt);
         System.out.print("Valor do contrato: R$");
-        double valor = sc.nextDouble();
+        double totalValue = sc.nextDouble();
+        Contract contract = new Contract(number, date, totalValue);
         System.out.print("Entre com o numero de parcelas: ");
         int installment = sc.nextInt();
+
+
+
         System.out.println("Parcelas: ");
+
 
 
         sc.close();
