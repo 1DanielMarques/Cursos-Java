@@ -1,7 +1,7 @@
-package model.services;
+package ex01.model.services;
 
-import model.entities.CarRental;
-import model.entities.Invoice;
+import ex01.model.entities.CarRental;
+import ex01.model.entities.Invoice;
 
 import java.time.Duration;
 
