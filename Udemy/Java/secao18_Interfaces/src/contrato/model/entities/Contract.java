@@ -39,7 +39,9 @@ public class Contract {
         return installmentList;
     }
 
-    public void setInstallmentList(List<Installment> installmentList) {
-        this.installmentList = installmentList;
+    public void addList(Installment installment) {
+        installmentList.add(installment);
     }
+
+
 }

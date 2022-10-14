@@ -10,7 +10,12 @@ public class ContractService {
         this.service = service;
     }
 
-    public void processContract(Contract contract, int months){
+    public void processContract(Contract contract, int months) {
+        for (int i = 1; i <= months; i++) {
+
+
+        }
+
 
     }
 

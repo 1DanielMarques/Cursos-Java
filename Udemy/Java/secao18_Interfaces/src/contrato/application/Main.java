@@ -1,6 +1,8 @@
 package contrato.application;
 
 import contrato.model.entities.Contract;
+import contrato.model.services.ContractService;
+import contrato.model.services.PaypalService;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -24,7 +26,8 @@ public class Main {
         Contract contract = new Contract(number, date, totalValue);
         System.out.print("Entre com o numero de parcelas: ");
         int installment = sc.nextInt();
-
+        ContractService cs = new ContractService(new PaypalService());
+        cs.processContract(contract,installment);
 
 
         System.out.println("Parcelas: ");
