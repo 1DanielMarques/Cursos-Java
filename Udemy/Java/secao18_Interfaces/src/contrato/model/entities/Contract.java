@@ -1,6 +1,7 @@
 package contrato.model.entities;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,6 +11,7 @@ public class Contract {
     private LocalDate date;
     private Double totalValue;
     private List<Installment> installmentList = new ArrayList<>();
+    private static DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
     public Contract(Integer number, LocalDate date, Double totalValue) {
         this.number = number;
@@ -40,6 +42,11 @@ public class Contract {
 
     public List<Installment> getInstallmentList() {
         return installmentList;
+    }
+
+    @Override
+    public String toString() {
+        return "Number: " + number + " Total Value: " + String.format("%.2f", totalValue) + " Date: " + fmt.format(date);
     }
 
 }
