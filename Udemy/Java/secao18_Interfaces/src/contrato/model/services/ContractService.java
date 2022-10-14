@@ -18,7 +18,7 @@ public class ContractService {
         for (int i = 1; i <= months; i++) {
             LocalDate dueDate = contract.getDate().plusMonths(i);
             double installment = service.interest(initialAmount, i);
-            double amount = initialAmount + service.paymentFee(initialAmount + installment);
+            double amount = initialAmount + service.paymentFee(initialAmount + installment) + installment;
             contract.getInstallmentList().add(new Installment(dueDate, amount));
         }
     }

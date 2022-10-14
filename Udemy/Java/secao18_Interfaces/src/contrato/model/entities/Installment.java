@@ -1,11 +1,14 @@
 package contrato.model.entities;
 
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Installment {
 
     private LocalDate dueDate;
     private Double amount;
+    private static DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
     public Installment(LocalDate dueDate, Double amount) {
         this.dueDate = dueDate;
@@ -22,6 +25,6 @@ public class Installment {
 
     @Override
     public String toString() {
-        return dueDate + " - " + String.format("%.2f", amount);
+        return fmt.format(dueDate) + " - " + String.format("%.2f", amount);
     }
 }
