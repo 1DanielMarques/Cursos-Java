@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class Application {
@@ -12,7 +13,7 @@ public class Application {
         final String PATH = "C:\\Users\\nohax\\OneDrive\\Área de Trabalho\\Software\\REPOSITORIOS\\CursosJava\\Udemy\\Java\\secao19_Generics\\src\\map\\eleicoes\\in.txt";
 
         try (BufferedReader br = new BufferedReader(new FileReader(PATH))) {
-            Map<String, Integer> votos = new HashMap<>();
+            Map<String, Integer> votos = new LinkedHashMap<>();
 
             String line = br.readLine();
             while (line != null) {
