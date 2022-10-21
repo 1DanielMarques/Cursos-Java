@@ -4,11 +4,9 @@ import curso.model.entities.enums.CourseName;
 
 public class Course {
     private CourseName name;
-    private Instructor instructor;
 
-    public Course(CourseName name, Instructor instructor) {
+    public Course(CourseName name) {
         this.name = name;
-        this.instructor = instructor;
     }
 
     public CourseName getName() {
@@ -19,13 +17,6 @@ public class Course {
         this.name = name;
     }
 
-    public Instructor getInstructor() {
-        return instructor;
-    }
-
-    public void setInstructor(Instructor instructor) {
-        this.instructor = instructor;
-    }
 
     @Override
     public boolean equals(Object o) {
