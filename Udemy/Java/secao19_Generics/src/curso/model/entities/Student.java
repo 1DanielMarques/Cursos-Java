@@ -3,20 +3,20 @@ package curso.model.entities;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Instructor {
-    private String name;
+public class Student {
+    private int id;
     private Set<Course> courses = new HashSet<>();
 
-    public Instructor(String name) {
-        this.name = name;
+    public Student(int id) {
+        this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public int getId() {
+        return id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public Set<Course> getCourses() {
@@ -32,9 +32,9 @@ public class Instructor {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Instructor that = (Instructor) o;
+        Student student = (Student) o;
 
-        return courses.equals(that.courses);
+        return courses.equals(student.courses);
     }
 
     @Override
