@@ -1,4 +1,4 @@
-package predicate.entities;
+package function.entities;
 
 public class Product {
 
@@ -29,14 +29,13 @@ public class Product {
         this.price = price;
     }
 
-    public static boolean staticProductPredicate(lambda1.model.entities.Product p) {
-        return p.getPrice() >= 100;
+    public static String staticUpperCaseName(Product p){
+     return p.getName().toUpperCase();
     }
 
-    public boolean nonStaticProductPredicate() {
-        return price >= 100;
+    public String nonStaticUpperCaseName(){
+        return name.toUpperCase();
     }
-
 
     @Override
     public String toString() {

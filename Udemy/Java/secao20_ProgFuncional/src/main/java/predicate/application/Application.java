@@ -16,7 +16,7 @@ public class Application {
 
         list.sort((p1, p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase()));
 
-                /* Expressao lambda inline
+        /* Expressao lambda inline
             double min = 100.0;
             list.removeIf(p -> p.getPrice() >= min);
          */
