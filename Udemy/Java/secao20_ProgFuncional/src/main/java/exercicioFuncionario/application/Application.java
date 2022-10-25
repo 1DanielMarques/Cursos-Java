@@ -32,7 +32,7 @@ public class Application {
                     .map(e -> e.getEmail())
                     .sorted()
                     .collect(Collectors.toList());
-            System.out.println(Arrays.toString(emails.toArray()));
+            emails.forEach(System.out::println);
             double aux = 0;
             double sum = employeeList.stream()
                     .filter(e -> e.getName().charAt(0) == 'M')
