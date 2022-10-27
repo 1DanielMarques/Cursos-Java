@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="915c76ad-2e66-4ecf-be60-ca54bdfe9557" name="Changes" comment="adding maven dependency mysql connector">
-      <change afterPath="$PROJECT_DIR$/src/main/java/jdbc1/DbException.java" afterDir="false" />
+    <list default="true" id="915c76ad-2e66-4ecf-be60-ca54bdfe9557" name="Changes" comment="DbException">
+      <change afterPath="$PROJECT_DIR$/src/main/java/jdbc1/db/DB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666861784556</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="DbException">
+      <created>1666861909163</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666861909163</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -81,6 +88,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit creating project" />
     <MESSAGE value="adding maven dependency mysql connector" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding maven dependency mysql connector" />
+    <MESSAGE value="DbException" />
+    <option name="LAST_COMMIT_MESSAGE" value="DbException" />
   </component>
 </project>
