@@ -23,6 +23,7 @@ public class Main {
             e.printStackTrace();
         } finally {
             DB.closeStatement(stm);
+            DB.closeResultSet(rs);
 
 
 
