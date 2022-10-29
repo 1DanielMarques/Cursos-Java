@@ -24,9 +24,7 @@ public class Main {
         } finally {
             DB.closeStatement(stm);
             DB.closeResultSet(rs);
-
-
-
+            DB.closeConnection(con);
         }
     }
 }
