@@ -22,19 +22,9 @@ public class Main {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                if (rs != null) {
-                    rs.close();
-                }
-                if (con != null) {
-                    con.close();
-                }
-                if (stm != null) {
-                    stm.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            DB.closeStatement(stm);
+
+
 
         }
     }

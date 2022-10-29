@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="915c76ad-2e66-4ecf-be60-ca54bdfe9557" name="Changes" comment="SELECT * FROM department">
+    <list default="true" id="915c76ad-2e66-4ecf-be60-ca54bdfe9557" name="Changes" comment="ending connection">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jdbc1/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdbc1/application/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jdbc1/db/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdbc1/db/DB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667073697331</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ending connection">
+      <created>1667073853011</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667073853011</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,6 +162,7 @@
     <MESSAGE value="closeConnection method" />
     <MESSAGE value="db connection successful" />
     <MESSAGE value="SELECT * FROM department" />
-    <option name="LAST_COMMIT_MESSAGE" value="SELECT * FROM department" />
+    <MESSAGE value="ending connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="ending connection" />
   </component>
 </project>
