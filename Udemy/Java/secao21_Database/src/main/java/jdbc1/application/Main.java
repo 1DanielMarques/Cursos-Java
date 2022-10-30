@@ -1,7 +1,6 @@
 package jdbc1.application;
 
 import jdbc1.db.DB;
-import jdbc1.db.DbException;
 
 import java.sql.Connection;
 import java.sql.Date;
@@ -27,13 +26,17 @@ public class Main {
             pstm.setDate(3, new Date(sdf.parse("09/09/2003").getTime()));
             pstm.setDouble(4, 3000.0);
             pstm.setInt(5, 4);
-
+            //pstm.execute();
+            int rowsAffected = pstm.executeUpdate();
+            System.out.printf("Done! Rows affected: " + rowsAffected);
         } catch (SQLException e) {
-            throw new DbException(e.getMessage());
+            e.printStackTrace();
         } catch (ParseException e) {
-            throw new DbException(e.getMessage());
+            e.printStackTrace();
+        } finally {
+            DB.closeStatement(pstm);
+            DB.closeConnection(con);
         }
-
 
     }
 }
