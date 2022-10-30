@@ -40,6 +40,7 @@ public class DB {
             return props;
         } catch (IOException e) {
             throw new DbException(e.getMessage());
+
         }
     }
 
