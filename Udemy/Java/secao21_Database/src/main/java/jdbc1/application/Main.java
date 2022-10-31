@@ -1,6 +1,7 @@
 package jdbc1.application;
 
 import jdbc1.db.DB;
+import jdbc1.db.DbIntegrityException;
 
 import java.sql.*;
 import java.text.ParseException;
@@ -13,10 +14,15 @@ public class Main {
         PreparedStatement st = null;
         try {
             con = DB.getConnection();
+            st = con.prepareStatement(
+                    " DELETE FROM department " +
+                            " WHERE " +
+                            " Id = ? ");
 
+            st.setInt(1, 2);
             st.execute();
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new DbIntegrityException(e.getMessage());
         } finally {
             DB.closeStatement(st);
             DB.closeConnection(con);

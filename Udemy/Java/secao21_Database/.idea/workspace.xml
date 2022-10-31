@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2259b655-1adf-4b51-ac50-d63ab9632167" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/jdbc1/db/DbIntegrityException.java" afterDir="false" />
+    <list default="true" id="2259b655-1adf-4b51-ac50-d63ab9632167" name="Changes" comment="DbIntegrityException">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jdbc1/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdbc1/application/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jdbc1/application/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc1/application/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667222419556</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="DbIntegrityException">
+      <created>1667222686439</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1667222686439</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,6 +211,7 @@
     <MESSAGE value="sql statement prepared" />
     <MESSAGE value="insert done" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="DbIntegrityException" />
+    <option name="LAST_COMMIT_MESSAGE" value="DbIntegrityException" />
   </component>
 </project>
