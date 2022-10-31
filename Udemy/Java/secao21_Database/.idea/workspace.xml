@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2259b655-1adf-4b51-ac50-d63ab9632167" name="Changes" comment="DbIntegrityException">
+    <list default="true" id="2259b655-1adf-4b51-ac50-d63ab9632167" name="Changes" comment="DELETE with exception: Cannot delete or update a parent row: a foreign key constraint fails">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jdbc1/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdbc1/application/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/jdbc1/application/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc1/application/Main.class" afterDir="false" />
@@ -182,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667222686439</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="DELETE with exception: Cannot delete or update a parent row: a foreign key constraint fails">
+      <created>1667222959955</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1667222959955</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,6 +219,7 @@
     <MESSAGE value="insert done" />
     <MESSAGE value="Update" />
     <MESSAGE value="DbIntegrityException" />
-    <option name="LAST_COMMIT_MESSAGE" value="DbIntegrityException" />
+    <MESSAGE value="DELETE with exception: Cannot delete or update a parent row: a foreign key constraint fails" />
+    <option name="LAST_COMMIT_MESSAGE" value="DELETE with exception: Cannot delete or update a parent row: a foreign key constraint fails" />
   </component>
 </project>
