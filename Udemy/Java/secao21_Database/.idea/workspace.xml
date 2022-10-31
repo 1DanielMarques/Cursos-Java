@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="915c76ad-2e66-4ecf-be60-ca54bdfe9557" name="Changes" comment="db connection successful" />
+    <list default="true" id="915c76ad-2e66-4ecf-be60-ca54bdfe9557" name="Changes" comment="insert done">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jdbc1/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdbc1/application/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jdbc1/application/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc1/application/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jdbc1/db/DB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc1/db/DB.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,7 +127,49 @@
       <option name="project" value="LOCAL" />
       <updated>1666862733022</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="SELECT * FROM department">
+      <created>1667073697331</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667073697331</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ending connection">
+      <created>1667073853011</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667073853011</updated>
+    </task>
+    <task id="LOCAL-00010" summary="closeStatement method">
+      <created>1667074003552</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667074003552</updated>
+    </task>
+    <task id="LOCAL-00011" summary="closeResultSet method">
+      <created>1667074055359</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1667074055359</updated>
+    </task>
+    <task id="LOCAL-00012" summary="sql statement prepared">
+      <created>1667156311900</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1667156311900</updated>
+    </task>
+    <task id="LOCAL-00013" summary="insert done">
+      <created>1667156555273</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1667156555273</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,6 +191,12 @@
     <MESSAGE value="generating db connection" />
     <MESSAGE value="closeConnection method" />
     <MESSAGE value="db connection successful" />
-    <option name="LAST_COMMIT_MESSAGE" value="db connection successful" />
+    <MESSAGE value="SELECT * FROM department" />
+    <MESSAGE value="ending connection" />
+    <MESSAGE value="closeStatement method" />
+    <MESSAGE value="closeResultSet method" />
+    <MESSAGE value="sql statement prepared" />
+    <MESSAGE value="insert done" />
+    <option name="LAST_COMMIT_MESSAGE" value="insert done" />
   </component>
 </project>
