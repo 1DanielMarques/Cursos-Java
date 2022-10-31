@@ -13,15 +13,7 @@ public class Main {
         PreparedStatement st = null;
         try {
             con = DB.getConnection();
-            st = con.prepareStatement(
-                    " UPDATE seller " +
-                            " SET BaseSalary =  BaseSalary + ? " +
-                            " WHERE " +
-                            " (DepartmentId = ?)");
-            st.setDouble(1, 200.0);
-            st.setInt(2, 2);
-            //int rowsAffected = st.executeUpdate();
-            //System.out.printf("Rows Affected: " + rowsAffected);
+
             st.execute();
         } catch (SQLException e) {
             e.printStackTrace();
