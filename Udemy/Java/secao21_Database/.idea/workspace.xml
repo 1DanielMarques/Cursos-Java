@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2259b655-1adf-4b51-ac50-d63ab9632167" name="Changes" comment="updating workspace.xml">
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/application/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/db/DB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/db/DbException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/db/DbIntegrityException.java" afterDir="false" />
+    <list default="true" id="2259b655-1adf-4b51-ac50-d63ab9632167" name="Changes" comment="creating project and copying DB package">
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/model/entities/Department.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -209,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667226101240</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="creating project and copying DB package">
+      <created>1667323919687</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1667323919687</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,6 +246,7 @@
     <MESSAGE value="DELETE with exception: Cannot delete or update a parent row: a foreign key constraint fails" />
     <MESSAGE value="Transaction with rollback" />
     <MESSAGE value="updating workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="updating workspace.xml" />
+    <MESSAGE value="creating project and copying DB package" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating project and copying DB package" />
   </component>
 </project>
