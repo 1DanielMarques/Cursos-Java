@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2259b655-1adf-4b51-ac50-d63ab9632167" name="Changes" comment="creating project and copying DB package">
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/model/entities/Department.java" afterDir="false" />
+    <list default="true" id="2259b655-1adf-4b51-ac50-d63ab9632167" name="Changes" comment="entity Department">
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/model/entities/Seller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/application/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,7 @@
       <recent name="C:\Users\nohax\OneDrive\Área de Trabalho\Software\REPOSITORIOS\CursosJava\Udemy\Java\secao21_Database" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.demo_dao_jdbc.application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jdbc1.application.Main" />
       <module name="secao21_Database" />
@@ -65,8 +66,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="demo_dao_jdbc.application.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo_dao_jdbc.application.Main" />
+      <module name="secao21_Database" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo_dao_jdbc.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.demo_dao_jdbc.application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -213,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667323919687</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="entity Department">
+      <created>1667324249547</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1667324249547</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -247,6 +269,7 @@
     <MESSAGE value="Transaction with rollback" />
     <MESSAGE value="updating workspace.xml" />
     <MESSAGE value="creating project and copying DB package" />
-    <option name="LAST_COMMIT_MESSAGE" value="creating project and copying DB package" />
+    <MESSAGE value="entity Department" />
+    <option name="LAST_COMMIT_MESSAGE" value="entity Department" />
   </component>
 </project>
