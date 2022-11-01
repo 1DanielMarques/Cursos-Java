@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2259b655-1adf-4b51-ac50-d63ab9632167" name="Changes" comment="Transaction with rollback" />
+    <list default="true" id="2259b655-1adf-4b51-ac50-d63ab9632167" name="Changes" comment="updating workspace.xml">
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/application/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/db/DB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/db/DbException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/db/DbIntegrityException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,14 +38,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Software/REPOSITORIOS/CursosJava/Udemy/Java/secao21_Database/src/main/java/demo-dao-jdbc",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Software\REPOSITORIOS\CursosJava\Udemy\Java\secao21_Database\src\main\java\demo-dao-jdbc" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nohax\OneDrive\Área de Trabalho\Software\REPOSITORIOS\CursosJava\Udemy\Java\secao21_Database" />
     </key>
@@ -67,7 +77,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="915c76ad-2e66-4ecf-be60-ca54bdfe9557" name="Changes" comment="" />
+      <changelist id="2259b655-1adf-4b51-ac50-d63ab9632167" name="Changes" comment="updating workspace.xml" />
       <created>1666806813123</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -192,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667225461077</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="updating workspace.xml">
+      <created>1667226101240</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1667226101240</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,6 +241,7 @@
     <MESSAGE value="DbIntegrityException" />
     <MESSAGE value="DELETE with exception: Cannot delete or update a parent row: a foreign key constraint fails" />
     <MESSAGE value="Transaction with rollback" />
-    <option name="LAST_COMMIT_MESSAGE" value="Transaction with rollback" />
+    <MESSAGE value="updating workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating workspace.xml" />
   </component>
 </project>
