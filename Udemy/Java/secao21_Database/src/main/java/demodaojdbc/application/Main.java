@@ -37,11 +37,14 @@ public class Main {
         }
 
         System.out.println("\n--- Test 5: seller update---");
-        seller = sellerDao.findById(1);
-        seller.setName("Martha Waine");
+        seller = sellerDao.findById(2);
+        seller.setName("SeilaMan");
         sellerDao.update(seller);
-        System.out.println(sellerDao.findById(1));
+        System.out.println(sellerDao.findById(2));
 
+        System.out.println("\n--- Test 6: seller delete---");
+        sellerDao.deleteById(2);
+        System.out.println(sellerDao.findById(2));
 
 
     }
