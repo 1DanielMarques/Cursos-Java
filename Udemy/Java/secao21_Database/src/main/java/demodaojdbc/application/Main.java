@@ -5,6 +5,7 @@ import demodaojdbc.model.dao.SellerDao;
 import demodaojdbc.model.entities.Department;
 import demodaojdbc.model.entities.Seller;
 
+import java.util.Date;
 import java.util.List;
 
 public class Main {
@@ -27,6 +28,13 @@ public class Main {
             System.out.println(s);
         }
 
+        System.out.println("\n--- Test 4: seller insert---");
+        Seller seller1 = new Seller("Greg", "greg@gmail.com", new Date(), 4000.0, new Department(2, null));
+        sellerDao.insert(seller1);
+        list = sellerDao.findAll();
+        for (Seller s : list) {
+            System.out.println(s);
+        }
 
     }
 }

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2259b655-1adf-4b51-ac50-d63ab9632167" name="Changes" comment="findByDepartment and instantiateSeller/Department implementation">
+    <list default="true" id="2259b655-1adf-4b51-ac50-d63ab9632167" name="Changes" comment="findAll implementation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demodaojdbc/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demodaojdbc/application/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demodaojdbc/model/dao/impl/SellerDaoJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demodaojdbc/model/dao/impl/SellerDaoJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demodaojdbc/model/entities/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demodaojdbc/model/entities/Seller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667500210261</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="findAll implementation">
+      <created>1667500465926</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1667500465926</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -304,7 +313,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="adding maven dependency mysql connector" />
     <MESSAGE value="DbException" />
     <MESSAGE value="loading properties from DB class" />
     <MESSAGE value="generating db connection" />
@@ -329,7 +337,8 @@
     <MESSAGE value="SellerDaoJDBC and DaoFactory" />
     <MESSAGE value="findById implementation" />
     <MESSAGE value="findByDepartment and instantiateSeller/Department implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="findByDepartment and instantiateSeller/Department implementation" />
+    <MESSAGE value="findAll implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="findAll implementation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
