@@ -36,5 +36,13 @@ public class Main {
             System.out.println(s);
         }
 
+        System.out.println("\n--- Test 5: seller update---");
+        seller = sellerDao.findById(1);
+        seller.setName("Martha Waine");
+        sellerDao.update(seller);
+        System.out.println(sellerDao.findById(1));
+
+
+
     }
 }
