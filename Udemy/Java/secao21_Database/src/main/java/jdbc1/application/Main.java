@@ -1,6 +1,6 @@
 package jdbc1.application;
 
-import jdbc1.db.DB;
+import demodaojdbc.db.DB;
 import jdbc1.db.DbException;
 
 import java.sql.Connection;

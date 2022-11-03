@@ -4,11 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2259b655-1adf-4b51-ac50-d63ab9632167" name="Changes" comment="SellerDaoJDBC and DaoFactory" />
+    <list default="true" id="2259b655-1adf-4b51-ac50-d63ab9632167" name="Changes" comment="SellerDaoJDBC and DaoFactory">
+      <change afterPath="$PROJECT_DIR$/src/main/java/demodaojdbc/model/dao/impl/SellerDaoJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demodaojdbc/application/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/db/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demodaojdbc/db/DB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/db/DbException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demodaojdbc/db/DbException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/db/DbIntegrityException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demodaojdbc/db/DbIntegrityException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/model/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demodaojdbc/model/dao/DaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/model/dao/DepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demodaojdbc/model/dao/DepartmentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/model/dao/SellerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demodaojdbc/model/dao/SellerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/model/dao/impl/SellerDaoJDBC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/model/entities/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demodaojdbc/model/entities/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo_dao_jdbc/model/entities/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demodaojdbc/model/entities/Seller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jdbc1/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdbc1/application/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jdbc1/db/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jdbc1/db/DB.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,7 +55,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Software/REPOSITORIOS/CursosJava/Udemy/Java/secao21_Database/src/main/java/demo-dao-jdbc&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -47,8 +65,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nohax\OneDrive\Área de Trabalho\Software\REPOSITORIOS\CursosJava\Udemy\Java\secao21_Database" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="jdbc1.db" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.demo_dao_jdbc.application.Main">
+  <component name="RunManager" selected="Application.demodaojdbc.application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jdbc1.application.Main" />
       <module name="secao21_Database" />
@@ -62,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="demo_dao_jdbc.application.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo_dao_jdbc.application.Main" />
+    <configuration name="demodaojdbc.application.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demodaojdbc.application.Main" />
       <module name="secao21_Database" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo_dao_jdbc.application.*" />
+          <option name="PATTERN" value="demodaojdbc.application.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,7 +98,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.demo_dao_jdbc.application.Main" />
+        <item itemvalue="Application.demodaojdbc.application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -306,5 +327,9 @@
     <MESSAGE value="entity Seller" />
     <MESSAGE value="SellerDaoJDBC and DaoFactory" />
     <option name="LAST_COMMIT_MESSAGE" value="SellerDaoJDBC and DaoFactory" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

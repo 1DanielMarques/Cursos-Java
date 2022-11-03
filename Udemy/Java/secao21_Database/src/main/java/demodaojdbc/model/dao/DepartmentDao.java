@@ -1,6 +1,6 @@
-package demo_dao_jdbc.model.dao;
+package demodaojdbc.model.dao;
 
-import demo_dao_jdbc.model.entities.Department;
+import demodaojdbc.model.entities.Department;
 
 import java.util.List;
 

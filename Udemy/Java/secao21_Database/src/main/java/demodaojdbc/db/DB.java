@@ -1,4 +1,6 @@
-package demo;
+package demodaojdbc.db;
+
+import demodaojdbc.DbException;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -16,7 +18,7 @@ public class DB {
                 String url = props.getProperty("dburl");
                 con = DriverManager.getConnection(url, props);
             } catch (SQLException e) {
-                throw new demo.DbException(e.getMessage());
+                throw new DbException(e.getMessage());
             }
         }
         return con;
@@ -27,7 +29,7 @@ public class DB {
             try {
                 con.close();
             } catch (SQLException e) {
-                throw new demo.DbException(e.getMessage());
+                throw new DbException(e.getMessage());
             }
         }
 
@@ -39,7 +41,7 @@ public class DB {
             props.load(fs);
             return props;
         } catch (IOException e) {
-            throw new demo.DbException(e.getMessage());
+            throw new DbException(e.getMessage());
 
         }
     }
@@ -49,7 +51,7 @@ public class DB {
             try {
                 stm.close();
             } catch (SQLException e) {
-                throw new demo.DbException(e.getMessage());
+                throw new DbException(e.getMessage());
             }
         }
     }
@@ -58,7 +60,7 @@ public class DB {
             try {
                 rs.close();
             } catch (SQLException e) {
-                throw new demo.DbException(e.getMessage());
+                throw new DbException(e.getMessage());
             }
         }
     }
@@ -68,7 +70,7 @@ public class DB {
             try {
                 con.close();
             } catch (SQLException e) {
-                throw new demo.DbException(e.getMessage());
+                throw new DbException(e.getMessage());
             }
         }
     }

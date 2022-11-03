@@ -1,4 +1,4 @@
-package demo_dao_jdbc.model.entities;
+package demodaojdbc.model.entities;
 
 import java.io.Serializable;
 import java.util.Objects;

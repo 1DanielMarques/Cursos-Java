@@ -1,4 +1,4 @@
-package demo;
+package demodaojdbc;
 
 public class DbException extends RuntimeException {
 
