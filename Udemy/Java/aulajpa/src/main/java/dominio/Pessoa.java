@@ -1,4 +1,4 @@
-package aula_jpa1.dominio;
+package dominio;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
