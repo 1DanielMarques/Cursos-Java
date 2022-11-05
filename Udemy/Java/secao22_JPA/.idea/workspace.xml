@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e7faa8d-4ab5-4692-aca2-51b5fdced7f5" name="Changes" comment="colocando dependencias jpa e anotacoes Entity e atributo id">
-      <change afterPath="$PROJECT_DIR$/../aulajpa/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aulajpa/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aulajpa/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aulajpa/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aulajpa/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aulajpa/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aulajpa/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aulajpa/src/main/java/applicacao/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../aulajpa/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aula_jpa1/applicacao/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aula_jpa1/applicacao/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/aula_jpa1/dominio/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aula_jpa1/dominio/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aula_jpa1/applicacao/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aula_jpa1/applicacao/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aula_jpa1/dominio/Pessoa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aula_jpa1/dominio/Pessoa.class" afterDir="false" />
-    </list>
+    <list default="true" id="7e7faa8d-4ab5-4692-aca2-51b5fdced7f5" name="Changes" comment="inserindo buscando e deletando com JPA e conceitos basicos" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667587867116</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="inserindo buscando e deletando com JPA e conceitos basicos">
+      <created>1667590517762</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667590517762</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,6 +107,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="aula_jpa1 clase Pessoa" />
     <MESSAGE value="colocando dependencias jpa e anotacoes Entity e atributo id" />
-    <option name="LAST_COMMIT_MESSAGE" value="colocando dependencias jpa e anotacoes Entity e atributo id" />
+    <MESSAGE value="inserindo buscando e deletando com JPA e conceitos basicos" />
+    <option name="LAST_COMMIT_MESSAGE" value="inserindo buscando e deletando com JPA e conceitos basicos" />
   </component>
 </project>
