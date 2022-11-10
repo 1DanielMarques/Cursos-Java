@@ -1,7 +1,7 @@
 package com.javacourse.workshopmongo.services;
 
 import com.javacourse.workshopmongo.domain.Post;
-import com.javacourse.workshopmongo.repositories.PostRepository;
+import com.javacourse.workshopmongo.repositories.IPostRepository;
 import com.javacourse.workshopmongo.services.exception.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,7 +13,7 @@ import java.util.Optional;
 public class PostService {
 
     @Autowired
-    private PostRepository repository;
+    private IPostRepository repository;
 
     public Post findById(String id) {
         Optional<Post> Post = repository.findById(id);
@@ -21,7 +21,7 @@ public class PostService {
     }
 
     public List<Post> findByTitle(String text) {
-        return repository.findByTitleContainingIgnoreCase(text);
+        return repository.searchByTItle(text);
     }
 
 

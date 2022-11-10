@@ -2,7 +2,7 @@ package com.javacourse.workshopmongo.services;
 
 import com.javacourse.workshopmongo.domain.User;
 import com.javacourse.workshopmongo.dto.UserDTO;
-import com.javacourse.workshopmongo.repositories.UserRepository;
+import com.javacourse.workshopmongo.repositories.IUserRepository;
 import com.javacourse.workshopmongo.services.exception.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,7 +14,7 @@ import java.util.Optional;
 public class UserService {
 
     @Autowired
-    private UserRepository repository;
+    private IUserRepository repository;
 
     public User insert(User obj) {
         return repository.insert(obj);
